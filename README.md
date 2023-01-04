@@ -48,7 +48,7 @@ Here is an example of the model output:
 
 ```
 ANSWER: YES. 
-EXPLANATION: Alkermes Plc develops and commercializes products designed to address the unmet needs of patients suffering from addiction and schizophrenia, which are both addressed in the bill. Additionally, the bill requires the Centers for Medicare & Medicaid Services (CMS) to negotiate with pharmaceutical companies regarding prices for drugs covered under the Medicare prescription drug benefit, which could potentially impact Alkermes Plc.
+EXPLANATION: Alkermes Plc is a biopharmaceutical company that develops and commercializes products designed to address unmet medical needs of patients in major therapeutic areas, including addiction and schizophrenia. This bill requires the Centers for Medicare & Medicaid Services (CMS) to negotiate with pharmaceutical companies regarding prices for drugs covered under the Medicare prescription drug benefit, which could potentially impact Alkermes Plc's products.
 CONFIDENCE: 95
 ```
 
@@ -73,7 +73,9 @@ We thank you for your consideration and look forward to working with you to ensu
 
 Sincerely,
 
-[General Counsel of Alkermes Plc]
+[Name],
+General Counsel
+Alkermes Plc
 ```
 
 
