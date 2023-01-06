@@ -2,17 +2,38 @@
 
 ## Large Language Models as Corporate Lobbyists
 
-Paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615
+### Links
 
-**Abstract:** 
+- **[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615)**
+- **[Code](https://github.com/JohnNay/llm-lobbyist/blob/main/gpt_corporate_lobbying.ipynb)**
+- **[Data](https://github.com/JohnNay/llm-lobbyist/blob/main/legislation_relevance_dataset_for_llm_evaluation_unbalanced.csv)**
+
+### Abstract
+
 > We demonstrate a proof-of-concept of a large language model conducting corporate lobbying related activities. An autoregressive large language model (OpenAI’s `text-davinci-003`) determines if proposed U.S. Congressional bills are relevant to specific public companies and provides explanations and confidence levels. For the bills the model deems as relevant, the model drafts a letter to the sponsor of the bill in an attempt to persuade the congressperson to make changes to the proposed legislation. We use hundreds of ground-truth labels of the relevance of a bill to a company to benchmark the performance of the model, which outperforms the baseline of predicting the most common outcome of irrelevance. We also benchmark the performance of the previous OpenAI GPT-3 model (`text-davinci-002`), which was state-of-the-art on many language tasks until `text-davinci-003` was recently released. The performance of `text-davinci-002` is worse than simply always predicting that a bill is irrelevant to a company. These results suggest that, as large language models continue to exhibit improved core natural language understanding capabilities, performance on corporate lobbying related tasks will continue to improve. If AI begins to influence law in a manner that is not a direct extension of human intentions, this threatens the critical role that law as information could play in aligning AI with humans. This paper explores how this is increasingly a possibility. Initially, AI is being used to simply augment human lobbyists. However, there may be a slow creep of less and less human oversight over automated assessments of policy ideas and the written communication to regulatory agencies and Congressional staffers. The core question raised is where to draw the line between human-driven and AI-driven policy influence.
 
-**[Citation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615)**: John Nay, *Large Language Models as Corporate Lobbyists* (January 2, 2023). Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615.
+### Citation 
 
-**[Code](https://github.com/JohnNay/llm-lobbyist/blob/main/gpt_corporate_lobbying.ipynb)**
+If you use, please cite:
 
-**[Data](https://github.com/JohnNay/llm-lobbyist/blob/main/legislation_relevance_dataset_for_llm_evaluation_unbalanced.csv)**
+John Nay, *Large Language Models as Corporate Lobbyists* (January 2, 2023). Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615.
 
+Bibtex:
+
+```
+@article{nay2023llmlobbyist,
+  author = {John Nay},
+  archivePrefix = {arXiv},
+  eprint = {2301.01181},
+  primaryClass = {cs.CL},
+  title = {Large Language Models as Corporate Lobbyists},
+  year = 2023,
+  keywords = {language models, alignment, policy},
+  url = {https://arxiv.org/abs/2301.01181}
+}
+```
+
+### Overview
 
 We use autoregressive large language models to systematically:
 
