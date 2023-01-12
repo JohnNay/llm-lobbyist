@@ -126,6 +126,8 @@ Sincerely,
 [General Counsel of Alkermes Plc]
 ```
 
+This demonstrates that engineering the prompting of this model in order to elicit the desired behavior is important. LLMs can simulate many different personas.
+
 Here is the full prompt for writing the letter generation:
 ```
 You are a lobbyist influencing Congressional bills for their impacts on companies.
