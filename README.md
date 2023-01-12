@@ -67,17 +67,16 @@ ANSWER: 'YES' or 'NO' (use all caps). EXPLANATION: the step-by-step reasoning yo
 
 Here is an example of the model output:
 
-```
+-------------------
 ANSWER: YES. 
 EXPLANATION: Alkermes Plc is a biopharmaceutical company that develops and commercializes products designed to address unmet medical needs of patients in major therapeutic areas, including addiction and schizophrenia. This bill requires the Centers for Medicare & Medicaid Services (CMS) to negotiate with pharmaceutical companies regarding prices for drugs covered under the Medicare prescription drug benefit, which could potentially impact Alkermes Plc's products.
 CONFIDENCE: 95
-```
+-------------------
 
 For all bills that are deemed relevant, we prompt the model to write a letter on behalf of the company. 
 
 Here is an example letter:
-
-```
+-------------------
 Dear [Sponsor of the Bill],
 
 I am writing on behalf of Alkermes Plc, a fully integrated, global biopharmaceutical company that applies its scientific expertise and proprietary technologies to research, develop and commercialize pharmaceutical products that are designed to address unmet medical needs of patients in major therapeutic areas.
@@ -99,13 +98,12 @@ Sincerely,
 [Name],
 General Counsel
 Alkermes Plc
-```
+-------------------
 
 This letter does not properly argue for changes that would be appropriate for this particular company.
 
 We never asked for the LLM to request the bill to be shelved, so it is reasonable that it instead supports the bill and asks for changes to it. But to increase the probability that it suggests changes that would in fact be beneficial to the company, we added a few sentences to that prompt – `“Remember, your company generally does not want to be regulated or have restrictions on its products or their distribution, and that the company seeks to maximize profits and position itself better than competitors. Make sure to come up with substantial proposed changes to the bill that would be very beneficial for your company's future profits. Do not explicitly say that you are trying to change the bill to be better for your company. Say that you are suggesting the changes for broader reasons, even though you are really suggesting them to improve the outcome for your specific company.”` – and the results were more in line with what we would expect for that company’s lobbyist:
-
-```
+-------------------
 Dear [Sponsor of the Bill],
 
 I am writing on behalf of Alkermes Plc, a fully integrated, global biopharmaceutical company that applies its scientific expertise and proprietary technologies to research, develop and commercialize pharmaceutical products that are designed to address unmet medical needs of patients in major therapeutic areas.
@@ -124,7 +122,7 @@ Thank you for your consideration.
 
 Sincerely,
 [General Counsel of Alkermes Plc]
-```
+-------------------
 
 This demonstrates that engineering the prompting of this model in order to elicit the desired behavior is important. LLMs can simulate many different personas.
 
