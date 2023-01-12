@@ -5,8 +5,8 @@
 ### Links
 
 - **[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615)**
-- **[Code](https://github.com/JohnNay/llm-lobbyist/blob/main/gpt_corporate_lobbying.ipynb)**
-- **[Data](https://github.com/JohnNay/llm-lobbyist/blob/main/legislation_relevance_dataset_for_llm_evaluation_unbalanced.csv)**
+- **[Code](https://github.com/JohnNay/llm-lobbyist/blob/main/gpt_corporate_lobbying.ipynb)** [*This is code we have released to allow other researchers to improve on methods leveraging large language models to conduct related question-answering and language generation tasks*]
+- **[Data](https://github.com/JohnNay/llm-lobbyist/blob/main/legislation_relevance_dataset_for_llm_evaluation_unbalanced.csv)** [*This is a new dataset we have released to allow other researchers to benchmark the performance of automated systems to determine the relevance of legislation to particular companies*]
 
 ### Abstract
 
