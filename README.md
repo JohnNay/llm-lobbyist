@@ -98,7 +98,9 @@ We thank you for your consideration and look forward to working with you to ensu
 Sincerely,
 
 [Name],
+
 General Counsel
+
 Alkermes Plc
 
 -------------------
@@ -125,6 +127,7 @@ We believe that these changes would make the bill even more effective in achievi
 Thank you for your consideration.
 
 Sincerely,
+
 [General Counsel of Alkermes Plc]
 
 -------------------
