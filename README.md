@@ -1,24 +1,27 @@
 # llm-lobbyist
 
-## Large Language Models as Corporate Lobbyists
+# Large Language Models as Corporate Lobbyists
 
-### Links
+## Links
 
-- **[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615)**
-- **[Code](https://github.com/JohnNay/llm-lobbyist/blob/main/gpt_corporate_lobbying.ipynb)** [*This is code we have released to allow other researchers to improve on methods leveraging large language models to conduct related question-answering and language generation tasks*]
-- **[Data](https://github.com/JohnNay/llm-lobbyist/blob/main/legislation_relevance_dataset_for_llm_evaluation_unbalanced.csv)** [*This is a new dataset we have released to allow other researchers to benchmark the performance of automated systems to determine the relevance of legislation to particular companies*]
+- **[Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615)** 
+  - [*This is a draft paper to explain some of the potential (positive and negative) implications of taking the LLM as Lobbyist idea further*]
+- **[Code](https://github.com/JohnNay/llm-lobbyist/blob/main/gpt_corporate_lobbying.ipynb)** 
+  - [*This is code we have released to allow other researchers to improve on methods leveraging large language models to conduct related question-answering and language generation tasks*]
+- **[Data](https://github.com/JohnNay/llm-lobbyist/blob/main/legislation_relevance_dataset_for_llm_evaluation_unbalanced.csv)** 
+  - [*This is a new dataset we have released to allow other researchers to benchmark the performance of automated systems to determine the relevance of legislation to particular companies*]
 
-### Abstract
+## Abstract
 
 > We demonstrate a proof-of-concept of a large language model conducting corporate lobbying related activities. An autoregressive large language model (OpenAI’s `text-davinci-003`) determines if proposed U.S. Congressional bills are relevant to specific public companies and provides explanations and confidence levels. For the bills the model deems as relevant, the model drafts a letter to the sponsor of the bill in an attempt to persuade the congressperson to make changes to the proposed legislation. We use hundreds of novel ground-truth labels of the relevance of a bill to a company to benchmark the performance of the model, which outperforms the baseline of predicting the most common outcome of irrelevance. We also benchmark the performance of the previous OpenAI GPT-3 model (`text-davinci-002`), which was the state-of-the-art model on many academic natural language tasks until `text-davinci-003` was recently released. The performance of `text-davinci-002` is worse than a simple benchmark. These results suggest that, as large language models continue to exhibit improved natural language understanding capabilities, performance on corporate lobbying related tasks will continue to improve. Longer-term, if AI begins to influence law in a manner that is not a direct extension of human intentions, this threatens the critical role that law as information could play in aligning AI with humans. This Essay explores how this is increasingly a possibility. Initially, AI is being used to simply augment human lobbyists for a small proportion of their daily tasks. However, firms have an incentive to use less and less human oversight over automated assessments of policy ideas and the written communication to regulatory agencies and Congressional staffers. The core question raised is where to draw the line between human-driven and AI-driven policy influence.
 
-### Citation 
+## Citation 
 
-If you use, please cite:
+If you use this code, you can cite:
 
 John Nay, *Large Language Models as Corporate Lobbyists* (January 2, 2023). Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4316615.
 
-Bibtex:
+`Bibtex` for citations in LaTex:
 
 ```
 @article{nay2023llmlobbyist,
@@ -33,7 +36,7 @@ Bibtex:
 }
 ```
 
-### Overview
+## Overview
 
 We use autoregressive large language models to systematically:
 
@@ -68,9 +71,11 @@ ANSWER: 'YES' or 'NO' (use all caps). EXPLANATION: the step-by-step reasoning yo
 Here is an example of the model output:
 
 -------------------
-ANSWER: YES. 
-EXPLANATION: Alkermes Plc is a biopharmaceutical company that develops and commercializes products designed to address unmet medical needs of patients in major therapeutic areas, including addiction and schizophrenia. This bill requires the Centers for Medicare & Medicaid Services (CMS) to negotiate with pharmaceutical companies regarding prices for drugs covered under the Medicare prescription drug benefit, which could potentially impact Alkermes Plc's products.
-CONFIDENCE: 95
+**ANSWER**: YES. 
+
+**EXPLANATION**: Alkermes Plc is a biopharmaceutical company that develops and commercializes products designed to address unmet medical needs of patients in major therapeutic areas, including addiction and schizophrenia. This bill requires the Centers for Medicare & Medicaid Services (CMS) to negotiate with pharmaceutical companies regarding prices for drugs covered under the Medicare prescription drug benefit, which could potentially impact Alkermes Plc's products.
+
+**CONFIDENCE**: 95
 
 -------------------
 
